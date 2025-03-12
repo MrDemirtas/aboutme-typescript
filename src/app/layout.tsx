@@ -1,4 +1,7 @@
 import "./reset.css";
+import "./global.css";
+
+import Link from "next/link";
 
 export default function RootLayout({
   children,
@@ -7,7 +10,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="container">
+          <header>
+            <h1>Furkan Demirtaş</h1>
+            <nav>
+              <ul>
+                <li>
+                  <Link href="/">Anasayfa</Link>
+                </li>
+                <li>
+                  <Link href="/about">Hakkımda</Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
