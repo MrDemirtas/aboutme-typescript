@@ -29,7 +29,7 @@ header {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 64px;
+    gap: 24px;
     a {
       text-decoration: none;
       color: #fff;
@@ -78,6 +78,39 @@ main {
   gap: 24px;
   list-style: none;
   padding: 0;
+  a {
+    text-decoration: none;
+    color: #0070f3;
+    font-size: 1.25rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.project-cards {
+  display: grid;
+  gap: 24px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.project-card-links {
+  display: flex;
+  gap: 24px;
   a {
     text-decoration: none;
     color: #0070f3;

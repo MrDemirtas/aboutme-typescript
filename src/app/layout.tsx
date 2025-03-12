@@ -22,6 +22,9 @@ export default function RootLayout({
                 <li>
                   <Link href="/about">Hakkımda</Link>
                 </li>
+                <li>
+                  <Link href="/projects">Projelerim</Link>
+                </li>
               </ul>
             </nav>
           </header>
