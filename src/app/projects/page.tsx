@@ -1,4 +1,10 @@
-const myProjects = [
+interface Project {
+  name: string;
+  sourceCodeLink: string;
+  demoLink: string;
+}
+
+const myProjects: Project[] = [
   {
     name: "Not alma uygulaması",
     sourceCodeLink: "https://github.com/MrDemirtas/note-taking-web-app",
